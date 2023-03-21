@@ -1,0 +1,103 @@
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .pexels-erik-mclean-9331826-1-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 756px;
+    object-fit: cover;
+  }
+  .intro-child {
+    position: absolute;
+    top: 69px;
+    left: 73px;
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 415px;
+    height: 588px;
+  }
+  .find-the-best,
+  .welcome-to-driveease {
+    align-self: stretch;
+    position: relative;
+    letter-spacing: -0.3px;
+    line-height: 66px;
+    font-weight: 800;
+  }
+  .find-the-best {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: "IBM Plex Sans";
+  }
+  .welcome-to-driveease-parent {
+    position: absolute;
+    top: 105px;
+    left: 122px;
+    width: 317px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3px;
+    opacity: 0;
+  }
+  .welcome-to-driveease-parent.animate {
+    animation: 1s ease 0s 1 normal forwards slide-in-top;
+  }
+  .sign-up {
+    position: relative;
+    font-size: 36px;
+    letter-spacing: -0.3px;
+    line-height: 28px;
+    font-family: "IBM Plex Sans";
+    color: #fff;
+    text-align: left;
+  }
+  .login-wrapper,
+  .sign-up-wrapper {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 530px;
+    left: 154px;
+    border-radius: 10px;
+    background: linear-gradient(118.79deg, #ff4d26, #f4691a);
+    box-shadow: -3px -3px 7px rgba(10, 16, 46, 0.25), 0 2px 7px #09123f inset;
+    width: 254px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-wrapper {
+    padding: 0 57px;
+    top: 437px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+  .intro {
+    display: flex;
+    position: relative;
+    background-color: #232629;
+    width: 100%;
+    height: 756px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: "Open Sans";
+  }
+  
