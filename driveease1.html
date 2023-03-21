@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./driveease1.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <img
+        class="pexels-erik-mclean-9331826-1-icon"
+        alt=""
+        src="./public/pexelserikmclean9331826-1@2x.png"
+      />
+      <section class="intro-child" id="overlay1"></section>
+      <div
+        class="welcome-to-driveease-parent"
+        id="welcome"
+        data-animate-on-scroll
+      >
+        <div class="welcome-to-driveease">Welcome to DriveEase</div>
+        <div class="find-the-best">
+          Find the best possible parking space near by your desired destination
+        </div>
+      </div>
+      <button class="sign-up-wrapper"><b class="sign-up">SIGN UP</b></button
+      ><button class="login-wrapper"><b class="sign-up">LOGIN</b></button>
+    </div>
+
+    <script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>
