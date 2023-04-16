@@ -16,11 +16,11 @@ $uname = validate($_POST['uname']);
 $pass = validate($_POST['password']);
 
 if(empty($uname)){
-    header("Location: login.php? error=User Name is required");
+    header("Location: login_signup.php? error=User Name is required");
     exit();
 }
 else if(empty($pass)){
-    header("Location: login.php? error=Password is required");
+    header("Location: login_signup.php? error=Password is required");
     exit();
 }
 
@@ -38,11 +38,11 @@ if(mysqli_num_rows($result)===1){
         exit();
     }
     else{
-        header("Location: login.php?error=Incorrect UserName or Password");
+        header("Location: login_signup.php?error=Incorrect UserName or Password");
         exit();
     }
 }
 else{
-    header("Location: login.php?error=Incorrect UserName or Password");
+    header("Location: login_signup.php?error=Incorrect UserName or Password");
     exit();
 }

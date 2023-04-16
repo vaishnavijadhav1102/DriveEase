@@ -3,7 +3,7 @@
     $dbhost="localhost";
     $dbuser = "root";
     $dbpass = "";
-    $db_name = "test_db";
+    $db_name = "drivease";
 
     $con =  mysqli_connect($dbhost, $dbuser, $dbpass, $db_name);
 
