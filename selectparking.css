@@ -4,6 +4,17 @@
   padding: 5px;
 }
 
+:root{
+  --blue:#2980b9;
+  --red:tomato;
+  --orange:orange;
+  --black:#333;
+  --white:#fff;
+  --bg-color:#eee;
+  --dark-bg:rgba(0,0,0,.7);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+  --border:.1rem solid #999;
+}
 /* Clear floats after image containers */
 .row::after {
   content: "";
@@ -24,3 +35,82 @@
   margin-left: 10px;  
   width: 600px;  
 }  
+
+.order-message-container{
+  position: fixed;
+  top:0; left:0;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding:2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  background-color: var(--dark-bg);
+  width: 100%;
+}
+
+.order-message-container::-webkit-scrollbar{
+  width: 1rem;
+}
+
+.order-message-container::-webkit-scrollbar-track{
+  background-color: var(--dark-bg);
+}
+
+.order-message-container::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+}
+
+.order-message-container .message-container{
+  width: 50rem;
+  background-color: var(--white);
+  border-radius: .5rem;
+  padding:2rem;
+  text-align: center;
+}
+
+.order-message-container .message-container h3{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+.order-message-container .message-container .order-detail{
+  background-color: var(--bg-color);
+  border-radius: .5rem;
+  padding:1rem;
+  margin:1rem 0;
+}
+
+.order-message-container .message-container .order-detail span{
+  background-color: var(--white);
+  border-radius: .5rem;
+  color:var(--black);
+  font-size: 2rem;
+  display: inline-block;
+  padding:1rem 1.5rem;
+  margin:1rem;
+}
+
+.order-message-container .message-container .order-detail span.total{
+  display: block;
+  background: var(--red);
+  color:var(--white);
+}
+
+.order-message-container .message-container .customer-details{
+  margin:1.5rem 0;
+}
+
+.order-message-container .message-container .customer-details p{
+  padding:1rem 0;
+  font-size: 2rem;
+  color:var(--black);
+}
+
+.order-message-container .message-container .customer-details p span{
+  color:var(--blue);
+  padding:0 .5rem;
+  text-transform: none;
+}

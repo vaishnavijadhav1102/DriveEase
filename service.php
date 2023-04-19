@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
-    <?php require("inc/links.php");?>
-    <link rel="stylesheet" href="css/commoncss.css">
+    <?php require("links.php");?>
+    <link rel="stylesheet" href="commoncss.css">
 </head>
 <body>
-    <?php require("inc/header_main.php");?>
+    <?php require("header.php");?>
     <div class="container">
 
         <div class="container mt-5">
@@ -17,7 +17,7 @@
             <div class="row justify-content-between">
                 <div class="col-lg-3 mx-auto mt-4">
                     <div class="card" style="width: 15rem; height: 30rem;">
-                        <img src="images/facilities/parking.gif">
+                        <img src="public1/facilities/parking.gif">
                         <div class="card-body">
                             <h5 class="card-title">Park Your Car</h5>
                             <p class="card-text">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="col-lg-3 mx-auto mt-4">
                     <div class="card" style="width: 15rem; height: 30rem;">
-                        <img src="images/facilities/car-service.gif">
+                        <img src="public1/facilities/car-service.gif">
                         <div class="card-body">
                             <h5 class="card-title">Car In Need?</h5>
                             <p class="card-text">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="col-lg-3 mx-auto mt-4">
                     <div class="card" style="width: 15rem; height: 30rem;">
-                        <img src="images/facilities/eco-fuel.gif">
+                        <img src="public1/facilities/eco-fuel.gif">
                         <div class="card-body">
                             <h5 class="card-title">Fuel Search</h5>
                             <p class="card-text">
@@ -63,7 +63,7 @@
             <div class="row justify-content-between mt-4">
                 <div class="col-lg-3 mx-auto mt-4">
                     <div class="card" style="width: 15rem; height: 30rem;">
-                        <img src="images/facilities/map.gif">
+                        <img src="public1/facilities/map.gif">
                         <div class="card-body">
                             <h5 class="card-title">Find My Car</h5>
                             <p class="card-text">
@@ -76,7 +76,7 @@
                 </div>
                 <div class="col-lg-3 mx-auto mt-4">
                     <div class="card" style="width: 15rem; height: 30rem;">
-                        <img src="images/facilities/speech-bubble.gif">
+                        <img src="public1/facilities/speech-bubble.gif">
                         <div class="card-body">
                             <h5 class="card-title">Forums</h5>
                             <p class="card-text">
@@ -93,6 +93,6 @@
             </div>
         </div>
     </div>
-    <?php require("inc/footer.php")?>
+    <?php require("footer.php")?>
 </body>
 </html>

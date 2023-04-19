@@ -3,10 +3,7 @@
 session_start();
 include "db_connection.php";
 
-
 ?>
-
-
 
     <div class="py-3 bg-primary">
         <div class="container">

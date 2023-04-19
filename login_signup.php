@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <html>
@@ -9,23 +10,10 @@
     <link rel="stylesheet" type="text/css" href="login_signup.css" />
     <link rel="stylesheet" href="commoncss.css"/>
     
-    <style>
-      /* CSS for the navbar */
-      .na {
-        height: 60px;
-        background-color: #333;
-        color: #fff;
-        display: flex;
-
-      }
-    </style>
     </head>
     
 <body>
-    <br>
-    <br>
     <div class="cont">
-        
         <div class="form sign-in">
             <form action="login_con.php" method="post">
                 <h2>Welcome</h2>
@@ -44,6 +32,7 @@
                 <p class="forgot-pass">Forgot password?</p>
                 <label>
                     <button type="submit"  value="Sign In" class="login-bg">Sign In</button>
+                    
                 </label>
             </form>
         </div>

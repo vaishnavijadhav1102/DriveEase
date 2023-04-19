@@ -3,9 +3,10 @@
         <div class="col-lg-4 p-4 text-white">
             <h3 class="h-font fw-bold fs-3 mb-2">DriveEase</h3>
             <p>
-                oksieehduidhuehxnujx
-                xnwxnwubiwucbuicb
-                jbdxwhbxiwbciebci
+                An online parking booking system that
+                simplifies parking and makes it affordable.
+                It also offers other services to make your driving 
+                experience convinient.
             </p>
         </div>
         <div class="col-lg-4 p-4 text-white">

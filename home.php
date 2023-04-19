@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drive Ease</title>
     <link rel="stylesheet" href="commoncss.css">
-    <?php require("links.php");?>
+    <?php require('links.php');?>
     
 
 </head>
 <body>
     <?php require("header.php");?>
-    
     <!-- swiper -->
     <div class="container-fluid px-lg-4 mt-4">
         <div class="swiper swipper-c">
@@ -56,9 +55,7 @@
                             </select>
                         </div>
                         <div class="col-lg-4">
-                        <a href="selectparking.php">
-                            <button style="left:50px;position:relative" type="submit" class="btn text-dark">
-                                Check Availability></button></a>
+                        <a target="_blank" class="btn btn-outline-dark text-dark shadow-none me-lg-3 me-4 custom-bg" href="selectparking.php">Book your slot</a>
                         </div>
                     </div>
                 </form>
@@ -140,16 +137,16 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-lg-2">
-                <img src="public1/facilities/parking_service.png" width="200px" height="200px">
+                <img src="public1/facilities/parking.gif" width="200px" height="200px">
             </div>
             <div class="col-lg-2">
-                <img src="public1/facilities/cloud.png" width="200px" height="200px">
+                <img src="public1/facilities/car-service.gif" width="200px" height="200px">
             </div>
             <div class="col-lg-2">
-                <img src="public1/facilities/electric-car.png" width="200px" height="200px">
+                <img src="public1/facilities/eco-fuel.gif" width="200px" height="200px">
             </div>
             <div class="col-lg-2">
-                <img src="public1/facilities/verify.png" width="200px" height="200px">
+                <img src="public1/facilities/map.gif" width="200px" height="200px">
             </div>
         </div>
     </div>
